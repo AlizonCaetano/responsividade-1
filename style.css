@@ -1,0 +1,102 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  font-size: 62%;
+
+  --bg-clr: #ECE9FD;
+  --txt-drk: #090038;
+  --txt-drk-gray: #090038a3;
+  --txt-lgt:#7057ef ;
+}
+
+body * {
+  font-family: 'Epilogue', sans-serif;
+}
+
+body{
+  font-size: 1.6rem;
+  background-color: var(--bg-clr);
+}
+
+.container{
+  padding: 6rem 2.3rem;
+}
+
+header span{
+  text-transform: uppercase;
+  color: var(--txt-lgt);
+}
+
+main div h2{
+  font-weight: 800;
+  color: var(--txt-drk);
+  margin-block: 1.7rem;
+  font-size: 4rem;
+
+  line-height: 5rem;
+}
+
+main div p{
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--txt-drk-gray);
+
+  margin-bottom: 3.2rem;
+}
+
+main div a,
+main div p{
+  font-weight: 400;
+}
+
+main div a{
+  display: flex;
+  color: var(--txt-drk);
+  margin-bottom: 7rem;
+
+  text-decoration: none;
+}
+
+main ul{
+  list-style: none;
+  font-size: 2.4rem;
+  
+  font-weight: 800;
+}
+
+main ul li{
+  display: flex;
+  align-items: center;
+  line-height: 4.2rem;
+
+  margin-bottom: 4rem;
+}
+
+main ul span{
+  margin-right: 3.8rem;
+  font-size: 7.2rem;
+}
+
+/*==========QUERIES=================*/
+
+@media(min-width: 768px){
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 11rem;
+  }
+
+  .container{
+    padding: 8rem 13rem;
+  }
+}
+
+@media(min-width: 768px){
+  .container{
+    padding: 7rem 8rem;
+  }
+}
